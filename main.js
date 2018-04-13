@@ -1,5 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.jsx';
+import {App, Header, Content} from './App.jsx';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+let modals = (
+    <div>
+        <App />
+        <Header />
+        <Content />
+    </div>
+);
+
+ReactDOM.render(modals, document.getElementById('app'));
+
